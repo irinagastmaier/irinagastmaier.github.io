@@ -23,13 +23,13 @@ body {
   grid-template-columns: repeat(2, 1fr) 450px;
   grid-template-areas:
     'header header nav';
+  position: relative;
 
 }
 
 .logo {
   width: 125px;
   margin: 0px auto;
-  position: relative;
   left: 125px;
   bottom: 1px;
 
