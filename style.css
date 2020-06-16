@@ -19,7 +19,7 @@ body {
 
 .header-container {
   display: grid;
-  grid-template-rows: 100px;
+  grid-template-rows: 64px;
   grid-template-columns: repeat(2, 1fr) 450px;
   grid-template-areas:
     'header header nav';
@@ -38,9 +38,6 @@ body {
 .header {
   width: 100%;
   grid-area: header;
-  color: white;
-  font-size: 25px;
-  font-family: sans-serif;
 }
 
 .navbar {
@@ -58,12 +55,13 @@ a:hover {
 }
 
 .container {
-  width: 80vw;
+  width: 90%;
+  height: 80vh;
   margin: 30px auto;
   padding: 20px;
   display: grid;
   gap: 20px;
-  grid-template-rows: 400px 100px;
+  grid-template-rows: 540px 100px;
   grid-template-columns: 1fr 52px;
   grid-template-areas:
     'box-1 side'
@@ -103,7 +101,7 @@ a:hover {
 
 .side-1 {
   border-top: 534px solid transparent;
-  border-bottom: 80px solid transparent;
+  border-bottom: 112px solid transparent;
   border-right: 165px solid #48838C;
   transform: rotate(15.55deg);
   z-index: 1;
@@ -113,47 +111,26 @@ a:hover {
   bottom: 105px;
 }
 
-
 .side-2 {
-  border-top: 34px solid transparent;
-  border-bottom: 60px solid transparent;
-  border-right: 55px solid #48838C;
-  z-index: 0;
-  height: 50px;
-  right: 5px;
-  bottom: 205px
+  border-top: 150px solid transparent;
+  border-bottom: 110px solid transparent;
+  border-right: 100px solid rgba(0,255,255);
+  height: 125px;
+  right: 50px;
+  bottom: 260px;
+  z-index: 2;
 }
 
 .side-3 {
-  border-top: 34px solid transparent;
-  border-bottom: 60px solid transparent;
-  border-right: 55px solid #48838C;
+  border-top: 120px solid transparent;
+  border-bottom: 130px solid transparent;
+  border-right: 220px solid #48838C;
   z-index: 0;
-  height: 50px;
-  right: 5px;
-  bottom: 400px
+  height: 150px;
+  right:111px;
+  bottom: 395px;
+  transform: rotate(238.95deg);
 }
-
-.side-4 {
-  border-top: 34px solid transparent;
-  border-bottom: 60px solid transparent;
-  border-right: 55px solid #48838C;
-  z-index: 0;
-  height: 50px;
-  right: 5px;
-  bottom: 400px
-}
-
-.side-5 {
-  border-top: 34px solid transparent;
-  border-bottom: 60px solid transparent;
-  border-right: 55px solid #48838C;
-  z-index: 0;
-  height: 50px;
-  right: 5px;
-  bottom: 400px
-}
-
 
 
 .footer {
@@ -161,3 +138,10 @@ a:hover {
   text-align: center;
   padding: 50px;
 }
+
+/*Desktop  @media (min-width: 850px) {
+
+} */
+
+/* Tablet + Smartphone @media (min-width: 550px) {
+  }  */
