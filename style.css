@@ -73,11 +73,7 @@ a {
       font-size: 3rem;
       line-height: 2em;
   }
-
-  .item-1 {
-      
-  }
-
+ 
 .main-content {
     grid-area: main;
     border-top: 3px solid #48838C;
