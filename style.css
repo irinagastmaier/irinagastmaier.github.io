@@ -9,9 +9,10 @@
   }
 
   section {
-      height: 90vh;
+    height: 90vh;
   }
 
+/* HOME */
 
 .header-container {
     display: grid;
@@ -36,8 +37,8 @@
   .navbar {
     margin: 10px auto;
     padding: 41px;
+    display: inline-flexbox;
   }
-
 
 a {
     text-decoration: none;
@@ -63,14 +64,14 @@ a {
   
   .container>* {
     padding: 20px;
-    color: white;
-    font-size: 25px;
-    font-family: sans-serif;
+    color: #f1f1f1;
+    /* font-family: sans-serif; */
+    font-size: 2.5em;
   }
   
   .box-1 {
       text-align: center;
-      font-size: 3rem;
+      font-size: 3em;
       line-height: 2em;
   }
  
@@ -102,4 +103,32 @@ a {
     height: 950px;
     clip-path: polygon(100% 0, 0% 88%, 100% 59%);
     transform: scale(0.75);
+    /* box-shadow: 10px 9px 38px -8px #126673; */
   }
+
+/* CONTACT */
+
+.row {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+margin: 0 auto;
+width: 90%;
+justify-content: center;
+/* font-family: sans-serif; */
+}
+
+.row-1, .row-2 {
+  text-align: center;
+}
+
+/* CONNECT */
+
+.final {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding-top: 50px ;
+}
