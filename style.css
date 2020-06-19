@@ -1,9 +1,9 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
   }
-  
+
   body {
     background: linear-gradient(0deg, rgba(229, 229, 229, 0.6), rgba(229, 229, 229, 0.6)), rgba(18, 102, 115, 0.5);
   }
@@ -12,110 +12,210 @@
     height: 90vh;
   }
 
+/* HEADER */
+
+.logo {
+  position: fixed; /* so the logo is always visible */
+
+  background: url(logo.svg) center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 2.75em; /* https://css-tricks.com/why-ems */
+  height: 4.5em;
+  display: block; /*https://css-tricks.com/almanac/properties/d/display/ */
+  margin: 1em;
+  left: 5.20em;
+  top: 0.1em;
+
+
+  z-index: 10; /* set header above navbar */
+}
+
+.navbar {
+  position: sticky;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  width: 95%;
+  z-index: 9; /* set header above the others elements */
+  position: sticky; /* so the header is always visible, similar to "fixed", but only snaps on the when scroll position reaches the element */
+}
+
+.navbar > a { /* applying only to links that are child of .navbar */
+  text-decoration: none;
+  color: #126673;
+  display: block;
+  box-sizing: border-box;
+  line-height: 1em; /* makes the text height be exactly 1em, avoiding weird margins */
+  
+  height: 3.5em;
+  padding: 2.75em 2em; /* (4.5 - 1) / 2, from (.header-container - text-height) / ("padding-top and padding-bottom") */
+  margin: 0.5em;
+  position: relative;
+  right: -2.5rem;
+
+  transition: color .25s ease /*https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
+}
+.navbar > a:active { /* onmousedown event */
+  color: #125663
+}
+.navbar > a:hover { /* onmouseover and ontouchdown event */
+  color: #C20861;
+}
+
+@media only screen and (max-width: 40rem) {
+
+  /* HEADER */
+  .logo {
+    position: inherit;
+    margin: 0.5em auto;
+  }
+  .navbar {
+    position: hide;
+    top: auto;
+    bottom: 0;
+
+    justify-content: space-around;
+
+    z-index: 9; /* set header above the others elements */
+  }
+  .navbar > a {
+    /* fills all the width of the navbar with the links */
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+  /* HOME */
+
+.item p {
+  position: relative;
+  font-size: 0.4em;
+  line-height: 5em;
+  right: -2.55rem;
+  text-align: left;
+  top: -1rem;
+}
+
+
+.icons i {
+  position: relative;
+  text-align: right;
+  margin-right: -3em;
+  letter-spacing: 2em;
+  bottom: 1em;
+}
+
+
+div .side-1 {
+  position: absolute;
+  right: 67px;
+  margin: -95px;
+  width: 400px;
+  height: 980px;
+  clip-path: polygon(100% 0, 0% 78%, 100% 59%);
+}
+
+
+}
+
+
 /* HOME */
 
-.header-container {
-    display: grid;
-    grid-template-rows: 64px;
-    grid-template-columns: repeat(2, 1fr) 450px;
-    grid-template-areas:
-      'header header nav';
-  }
-
-  .logo {
-    width: 125px;
-    margin: 0px auto;
-    left: 125px;
-    bottom: 1px;
-  
-  }
-.header {
-    width: 100%;
-    grid-area: header;
-  }
-  
-  .navbar {
-    margin: 10px auto;
-    padding: 41px;
-    display: inline-flexbox;
-  }
-
 a {
-    text-decoration: none;
-    color: #126673;
-  }
-  
-  a:hover {
-    color: #C20861;
-  }
+  text-decoration: none;
+  color: #126673;
+}
 
-  .container {
-    width: 90%;
-    margin: 30px auto;
-    padding: 20px;
-    display: grid;
-    grid-template-rows: 500px 100px;
-    grid-template-columns: 1fr 152px;
-    grid-template-areas:
-      'box-1 side'
-      'main side';
-    background-color: rgba(0, 0, 0, 0.9);
-  }
-  
-  .container>* {
-    padding: 20px;
-    color: #f1f1f1;
-    /* font-family: sans-serif; */
-    font-size: 2.5em;
-  }
-  
-  .box-1 {
-      text-align: center;
-      font-size: 3em;
-      line-height: 2em;
-  }
- 
+a:hover {
+  color: #C20861;
+}
+
+#home {
+  /*just a trick so when you click on the home link goes to the very top of the page,
+  it will compensate for the height of the header-container*/
+  padding-top: 4.5em;
+  margin-top: -6.3em;
+}
+
+/*
+this section needs work to work better on smaller screens,
+use "@media only screen and (max-width: 69.99rem)" for these cases
+*/
+.container {
+  /* cuts childs that goes beyond the borders, avoid weird horizontal scrollbars,
+  (comment the overflow property and resize the window, a horizontal scrollbar
+  will appear due to the .side-1, also will "overflow" outside the border of the .container),
+  see https://css-tricks.com/the-css-overflow-property/
+  */
+  overflow: hidden;
+
+  width: 90%;
+  margin: 1.875em auto;
+  padding: 1.25em; /* use em, confused on how to use the unit? just divide the value in px by 16! */
+  display: grid;
+  grid-template-rows: 31.25em 6.25em;
+  grid-template-columns: 1fr 9.5em;
+  grid-template-areas:
+    'box-1 side'
+    'main side';
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.container > * {
+  padding: 1.25rem; /* here I used rem, so it takes the base size from the parent (1em) and not from the element (2.5em) */
+  color: #f1f1f1;
+  font-size: 2.5em;
+}
+
+.box-1 {
+    text-align: center;
+    font-size: 3em;
+    line-height: 2em;
+}
+
 .main-content {
-    grid-area: main;
-    border-top: 3px solid #48838C;
-  }
-  
-  .icons {
-    text-align: right;
-    margin-right: 190px;
-    padding-top: 10px;
-    letter-spacing: 5px;
-  }
-  
-  .sidebar {
-    grid-area: side;
-    width: 100%;
-    height: 100%;
-    position: relative;
-  }
+  grid-area: main;
+  border-top: 3px solid #48838C;
+}
 
-  .side-1 {
-    position: absolute; 
-    right: 67px;
-    margin: -150px;
-    background:  #48838C;
-    width: 500px;
-    height: 950px;
-    clip-path: polygon(100% 0, 0% 88%, 100% 59%);
-    transform: scale(0.75);
-    /* box-shadow: 10px 9px 38px -8px #126673; */
-  }
+.icons {
+  text-align: right;
+  margin-right: 5em;
+  padding-top: 0.625em;
+  letter-spacing: 0.3125em;
+}
+
+.sidebar {
+  grid-area: side;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.side-1 {
+  position: absolute;
+  right: 67px;
+  margin: -150px;
+  background:  #48838C;
+  width: 500px;
+  height: 950px;
+  clip-path: polygon(100% 0, 0% 88%, 100% 59%);
+  transform: scale(0.75);
+  /* box-shadow: 10px 9px 38px -8px #126673; */
+  /* you can apply shadow and effects in svg images,
+  it's worth learning*/
+}
 
 /* CONTACT */
 
 .row {
-display: flex;
-flex-direction: column;
-flex-wrap: wrap;
-margin: 0 auto;
-width: 90%;
-justify-content: center;
-/* font-family: sans-serif; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 90%;
+  justify-content: center;
+  /* font-family: sans-serif; */
 }
 
 .row-1, .row-2 {
@@ -130,5 +230,5 @@ justify-content: center;
 
 footer {
   text-align: center;
-  padding-top: 50px ;
+  padding-top: 3.125em;
 }
