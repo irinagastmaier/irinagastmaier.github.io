@@ -16,51 +16,48 @@
 
 .logo {
   position: fixed; /* so the logo is always visible */
-
   background: url(logo.svg) center;
   background-repeat: no-repeat;
   background-size: contain;
-  width: 2.75em; /* https://css-tricks.com/why-ems */
+  width: 2.75em; 
   height: 4.5em;
   display: block; /*https://css-tricks.com/almanac/properties/d/display/ */
   margin: 1em;
   left: 5.20em;
   top: 0.1em;
-
-
   z-index: 10; /* set header above navbar */
 }
 
 .navbar {
-  position: sticky;
   display: flex;
+  flex-flow: row;
   justify-content: flex-end;
-  flex-wrap: nowrap;
   width: 95%;
   z-index: 9; /* set header above the others elements */
   position: sticky; /* so the header is always visible, similar to "fixed", but only snaps on the when scroll position reaches the element */
 }
 
-.navbar > a { /* applying only to links that are child of .navbar */
-  text-decoration: none;
-  color: #126673;
-  display: block;
-  box-sizing: border-box;
-  line-height: 1em; /* makes the text height be exactly 1em, avoiding weird margins */
-  
-  height: 3.5em;
-  padding: 2.75em 2em; /* (4.5 - 1) / 2, from (.header-container - text-height) / ("padding-top and padding-bottom") */
-  margin: 0.5em;
-  position: relative;
-  right: -2.5rem;
-
-  transition: color .25s ease /*https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
-}
 .navbar > a:active { /* onmousedown event */
   color: #125663
 }
 .navbar > a:hover { /* onmouseover and ontouchdown event */
   color: #C20861;
+}
+
+.nav-content {
+  transition: color .25s ease /*https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
+}
+
+.list-nav {
+  text-decoration: none;
+  list-style: none;
+  display: inline-block;
+  margin: 0.5em;
+  position: relative;
+  right: -2.5rem;
+  line-height: 1em;
+  height: 3.5em;
+  padding: 2.75em 2em;
 }
 
 @media only screen and (max-width: 40rem) {
@@ -222,7 +219,7 @@ use "@media only screen and (max-width: 69.99rem)" for these cases
   text-align: center;
 }
 
-/* CONNECT */
+/* CONTACT */
 
 .final {
   text-align: center;
