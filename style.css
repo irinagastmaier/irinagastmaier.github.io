@@ -6,6 +6,7 @@
 
   body {
     background: linear-gradient(0deg, rgba(229, 229, 229, 0.6), rgba(229, 229, 229, 0.6)), rgba(18, 102, 115, 0.5);
+    font-family: 'Raleway', sans-serif;
   }
 
   section {
@@ -15,12 +16,12 @@
 /* HEADER */
 
 .logo {
-  position: fixed; /* so the logo is always visible */
+  position: fixed;
   background: url(logo.svg) center;
   background-repeat: no-repeat;
   background-size: contain;
   width: 2.75em; 
-  height: 4.5em;
+  height: 3.75em;
   display: block; /*https://css-tricks.com/almanac/properties/d/display/ */
   margin: 1em;
   left: 5.20em;
@@ -32,11 +33,11 @@
   display: flex;
   flex-flow: row;
   justify-content: flex-end;
-  width: 95%;
+  width: 97%;
   z-index: 9; /* set header above the others elements */
   position: sticky; /* so the header is always visible, similar to "fixed", but only snaps on the when scroll position reaches the element */
-}
 
+}
 .navbar > a:active { /* onmousedown event */
   color: #125663
 }
@@ -52,12 +53,10 @@
   text-decoration: none;
   list-style: none;
   display: inline-block;
-  margin: 0.5em;
-  position: relative;
-  right: -2.5rem;
+  margin: 0 0.5em;
   line-height: 1em;
   height: 3.5em;
-  padding: 2.75em 2em;
+  padding: 2.75em 2em;  
 }
 
 @media only screen and (max-width: 40rem) {
