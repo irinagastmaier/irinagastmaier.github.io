@@ -23,8 +23,8 @@ rgb (241, 241, 241) quase branco : p
     font-family: 'Raleway', sans-serif;
   }
 
-  section {
-    height: 90vh;
+  #home, #contact {
+    height: 100vh;
   }
 
 /* HEADER */
