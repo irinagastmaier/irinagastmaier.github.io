@@ -1,3 +1,17 @@
+
+
+/* 
+rgb (72, 131, 140) verde-azul claro icons
+rgb( 4, 121, 138) azul linha home
+ rgb(27, 153, 179) azul chamativo, navbar
+rgb (18, 102, 115) verde-azul escuro triangulo
+rgb(194, 8, 97)rosa chamativo, navbar:hover, a:hover
+rgb(166, 76, 119) rosa
+rgb (0, 0, 0) preto
+rgb (241, 241, 241) quase branco : p
+*/
+
+
 * {
     margin: 0;
     padding: 0;
@@ -39,10 +53,10 @@
 
 }
 .navbar > a:active { /* onmousedown event */
-  color: #125663
+  color: rgb(27, 153, 179);
 }
 .navbar > a:hover { /* onmouseover and ontouchdown event */
-  color: #C20861;
+  color: rgb(194, 8, 97);
 }
 
 .nav-content {
@@ -119,11 +133,11 @@ div .side-1 {
 
 a {
   text-decoration: none;
-  color: #126673;
+  color: rgb(72, 131, 140);
 }
 
 a:hover {
-  color: #C20861;
+  color: rgb(194, 8, 97);
 }
 
 #home {
@@ -171,7 +185,7 @@ use "@media only screen and (max-width: 69.99rem)" for these cases
 
 .main-content {
   grid-area: main;
-  border-top: 3px solid #48838C;
+  border-top: 3px solid rgb(4, 121, 138);
 }
 
 .icons {
@@ -192,7 +206,7 @@ use "@media only screen and (max-width: 69.99rem)" for these cases
   position: absolute;
   right: 67px;
   margin: -150px;
-  background:  #48838C;
+  background:  rgb(18, 102, 115);
   width: 500px;
   height: 950px;
   clip-path: polygon(100% 0, 0% 88%, 100% 59%);
@@ -204,27 +218,77 @@ use "@media only screen and (max-width: 69.99rem)" for these cases
 
 /* CONTACT */
 
+
+
 .row {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  width: 85%;
+  text-align: center;
   margin: 0 auto;
-  width: 90%;
-  justify-content: center;
-  /* font-family: sans-serif; */
 }
 
-.row-1, .row-2 {
-  text-align: center;
+.row-3 {
+  width: 50%;
+  display: inline-block;
+  padding: 0.5rem;
 }
 
-/* CONTACT */
+.row-1 {
+  font-weight: 600;
+  font-size: 4em;
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  color: #f1f1f1;
+}
 
-.final {
-  text-align: center;
+.row-2 {
+  padding-bottom: 1rem;
+  font-size: 1.75em;
+}
+
+fieldset {
+  border: 2px solid  rgb(27, 153, 179);
+}
+
+label {
+  display: block;
+  text-align: left;
+  color: rgba(0,0,0,0.7);
+  font-size: 0.95em;
+}
+
+input, textarea{
+  width: 100%;
+  color: rgb(0,0,0);
+  border: 1px solid  rgb(72, 131, 140);
+  border-radius: 0.5%;
+  padding: 0.5rem;
+  font-size: 1em;
+}
+
+button {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 2.5em;
+  background-color: transparent;
+  color: rgb(72, 131, 140);
+  cursor:pointer;
+  border: none;
+}
+
+button:hover {
+  color: rgb(194, 8, 97);
+
 }
 
 footer {
   text-align: center;
-  padding-top: 3.125em;
+  padding-top: 2em;
+}
+
+.final {
+  text-align: center;
+  padding-top: 1em;
+  font-size: 2em;
 }

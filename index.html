@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- /* 
+rgb (72, 131, 140) verde-azul claro icons
+rgb( 4, 121, 138) azul linha home
+ rgb(27, 153, 179) azul chamativo, navbar
+rgb (18, 102, 115) verde-azul escuro triangulo
+rgb(194, 8, 97)rosa chamativo, navbar:hover, a:hover
+rgb(166, 76, 119) rosa
+rgb (0, 0, 0) preto
+rgb (241, 241, 241) quase branco : p
+*/ -->
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,8 +22,6 @@
 <body>
 
 <header class="logo" alt="logo">
-  <!-- <--Don't use embed images for logos, also prefer svg (scalable vector graphics) than png/jpg,
-  since it doesn't loose qualitiy (see Inkscape as an svg editor) + smaller file size (2KB vs 14KB)-->
 </header>
 
 <nav class="navbar">
@@ -22,7 +29,7 @@
     <li class="list-nav"><a href="#home">Home</a></li>
     <li class="list-nav"><a href="#skills">Skills</a></li>
     <li class="list-nav"><a href="#projects">Projects</a></li>
-    <li class="list-nav"><a href="#connect">Contact</a></li>
+    <li class="list-nav"><a href="#contact">Contact</a></li>
 </ul>
 </nav>
 
@@ -58,32 +65,38 @@
 
 <section id="contact">
 <div class="row">
-  <div class="row row-1">
-    <p>Get in touch</p>
-  </div>
+  <fieldset>
+  <legend class="row row-1">Get in touch</legend>
   <div class="row row-2">
     <p> I am happy to talk with you, whether you have a project, just ideas or don't even know where to start.</p>
   </div>
   <div class="row row-3">
-    <form action="server/form.php">
+    <form action="https://formspree.io/mqkydpov" method="post">
     <div class="row-3 col-1">
-      <input type="text" name="firstname" required placeholder="First Name"></div>
+      <input type="text" name="name" id="name" placeholder="First and Last Name" required/>
+    </div>
     <div class="row-3 col-2">
-				<input type="text" name="lastname" required placeholder="Last Name">
+      <input type="text" name="company-name" id="company-name" placeholder="Company Name" required/>
     </div>
     <div class="row-3 col-3">
-			<input type="text" name="company" required placeholder="Company Name">
+      <input list="company-sector" id="sector" name="sector" placeholder="Industry Sector" />
+      <datalist id="company-sector">
+      <option value="Primary"></option>
+      <option value="Secondary"></option>
+      <option value="Tertiary"></option>   
+      </datalist>
     </div>
     <div class="row-3 col-4">
-				<input type="email" required placeholder="Email">
+      <input type="email" name="email" id="email" placeholder="Email" required/>
     </div>
     <div class="row-3 col-5">
-      <label for="message">Your Message</label><br>
-				<textarea name="message"></textarea>
+      <label for="message" class="label">Your Message:</label>
+      <textarea name="message" id="message" rows="7" cols="50" placeholder="Enter your message here."></textarea>
     </div>
     <div class="row-3 col-6">
-      <input type="submit" value="Send"><i class="fas fa-paper-plane"></i>
+      <button type="submit"><i class="fas fa-paper-plane"></i></button>
     </div>
+  </fieldset>
   </form>
   </div>
 </div>
