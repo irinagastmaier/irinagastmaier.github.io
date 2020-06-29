@@ -24,7 +24,7 @@ rgb (241, 241, 241) quase branco : p
   }
 
   #home, #contact {
-    height: 120vh;
+    height: auto;
   }
 
 /* HEADER */
