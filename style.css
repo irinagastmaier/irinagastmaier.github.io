@@ -87,8 +87,8 @@ body {
     left: 0.05rem;
     margin: 0 auto;
     height: 1rem;
-    top: 0.80rem;
-    }
+    top: 0.8rem;
+  }
   .nav-content {
     display: flex;
     flex-direction: row;
@@ -127,7 +127,7 @@ body {
     margin-right: -3.5em;
     left: 3.15rem;
     letter-spacing: 2em;
-    bottom: 8.40em;
+    bottom: 8.4em;
     font-size: 2rem;
   }
 
@@ -145,11 +145,13 @@ body {
     font-size: 0.65rem;
   }
 
-.row-3 {
-  position: relative;
-  right: 2.25rem;
-}
-  .row-3 input, .row-3 textarea, .row-3 label {
+  .row-3 {
+    position: relative;
+    right: 2.25rem;
+  }
+  .row-3 input,
+  .row-3 textarea,
+  .row-3 label {
     width: 200px;
     font-size: 0.75rem;
   }
@@ -161,32 +163,30 @@ body {
 }
 
 /* Iphone */
-@media only screen 
-and (min-device-width : 375px) and (max-device-width : 667px) {
-
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
   main {
     height: 55vh;
   }
 
   .item p {
-  position: relative;
-  font-size: 0.4em;
-  line-height: 3em;
-  right: 0.5rem;
-  text-align: left;
-  top: -1em;
-}
+    position: relative;
+    font-size: 0.4em;
+    line-height: 3em;
+    right: 0.5rem;
+    text-align: left;
+    top: -1em;
+  }
 
-.icons i {
-  display: block;
-  position: relative;
-  text-align: left;
-  margin-right: -3.5em;
-  left: 4.45rem;
-  letter-spacing: 2em;
-  bottom: 10.59em;
-  font-size: 1.75rem;
-}
+  .icons i {
+    display: block;
+    position: relative;
+    text-align: left;
+    margin-right: -3.5em;
+    left: 4.45rem;
+    letter-spacing: 2em;
+    bottom: 10.59em;
+    font-size: 1.75rem;
+  }
 }
 
 /* AQUI TERMINA O MEDIA QUERIE */
