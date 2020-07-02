@@ -200,10 +200,10 @@ body {
     bottom: 10.59em;
     font-size: 1.75rem;
   }
-  .title-section p {
+  .title-section p, .projects-title p {
     font-size: 0.55em;
   }
-
+  
   .skills-bar ul {
     margin-right: 2em;
   }
