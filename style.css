@@ -297,9 +297,6 @@ use "@media only screen and (max-width: 69.99rem)" for these cases
   height: 950px;
   clip-path: polygon(100% 0, 0% 88%, 100% 59%);
   transform: scale(0.75);
-  /* box-shadow: 10px 9px 38px -8px #126673; */
-  /* you can apply shadow and effects in svg images,
-  it's worth learning*/
 }
 
 /* CONTACT */
@@ -318,7 +315,7 @@ use "@media only screen and (max-width: 69.99rem)" for these cases
 
 /* PAGE TITTLE */
 
-.row-1, .title-section {
+.row-1, .title-section, .projects-title {
   font-weight: 500;
   font-size: 3.75em;
   padding-bottom: 1rem;
@@ -353,6 +350,7 @@ textarea {
   border-radius: 0.5%;
   padding: 0.5rem;
   font-size: 1em;
+  font-family: "Raleway", sans-serif;
 }
 
 button {
@@ -390,6 +388,9 @@ footer {
   width: 85%;
   margin: 0 auto;
 
+}
+.skills-bar h4 {
+  font-weight: 400;
 }
 .skills-bar {
   display: flex;
@@ -582,3 +583,6 @@ footer {
   50%{background-position:100% 50%}
   100%{background-position:0% 50%}
 }
+
+
+/*  PROJECTS*/
