@@ -32,6 +32,7 @@ body {
 
 /* HEADER */
 
+
 .logo {
   position: absolute;
   background: url(logo.svg) center;
@@ -54,6 +55,8 @@ body {
   z-index: 9; /* set header above the others elements */
   position: sticky; /* so the header is always visible, similar to "fixed", but only snaps on the when scroll position reaches the element */
 }
+
+
 .navbar > a:active {
   /* onmousedown event */
   color: rgb(27, 153, 179);
@@ -160,7 +163,20 @@ body {
     position: relative;
     left: 2.25rem;
   }
+  /* SKILLS */
+  .title-section p{
+    font-size: 0.55em;
+  }
+  .skills-bar ul {
+    list-style-type: none;
+    margin-right: 1.75rem;
+  }
+
+  .skills-bar li {
+    width: 97.5%;
+  }
 }
+
 
 /* Iphone */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
@@ -186,6 +202,14 @@ body {
     letter-spacing: 2em;
     bottom: 10.59em;
     font-size: 1.75rem;
+  }
+  .title-section p{
+    font-size: 0.55em;
+  }
+
+  .skills-bar ul {
+    margin-right: 2em;
+
   }
 }
 
@@ -292,13 +316,18 @@ use "@media only screen and (max-width: 69.99rem)" for these cases
   padding: 0.5rem;
 }
 
-.row-1 {
-  font-weight: 600;
-  font-size: 4em;
+/* PAGE TITTLE */
+
+.row-1, .title-section {
+  font-weight: 500;
+  font-size: 3.75em;
   padding-bottom: 1rem;
   padding-top: 0.5rem;
   color: #f1f1f1;
+  text-align: center;
 }
+
+/* END PAGE TITTLE */
 
 .row-2 {
   padding-bottom: 1rem;
@@ -351,4 +380,205 @@ footer {
   text-align: center;
   padding-top: 1em;
   font-size: 2em;
+}
+
+/* SKILLS */
+
+.skills-bar, .title-section {
+  border-left: 2px solid rgba(0, 0, 0, 0.7);
+  border-right: 2px solid rgba(0, 0, 0, 0.7);
+  width: 85%;
+  margin: 0 auto;
+
+}
+.skills-bar {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+
+.skills-bar ul {
+  width: 90.5%;
+  height: 95%;
+  list-style-type: none;
+  margin-left: 3.25rem;
+}
+
+.bar {
+	width: 94%;
+	background-color: white;
+  text-align: right;
+  
+}
+
+.skills {
+	text-align: right;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: white;
+}
+
+.html {
+	width: 95%;
+  background: linear-gradient(270deg, #48838c, #04798a, #1b99b3, #126673,  #f1f1f1);
+  background-size: 1000% 1000%;
+
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  -o-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-o-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+
+.css {
+	width: 95%;
+  background: linear-gradient(270deg, #48838c, #04798a, #1b99b3, #126673, #f1f1f1);
+  background-size: 1000% 1000%;
+
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  -o-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-o-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+.js {
+	width: 65%;
+  background: linear-gradient(270deg, #48838c, #04798a, #1b99b3, #126673, #f1f1f1);
+  background-size: 1000% 1000%;
+
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  -o-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-o-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+.nodejs {
+	width: 55%;
+  background: linear-gradient(270deg, #48838c, #04798a, #1b99b3, #126673, #f1f1f1);
+  background-size: 1000% 1000%;
+
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  -o-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-o-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+
+}
+
+.npm {
+	width: 45%;
+  background: linear-gradient(270deg, #48838c, #04798a, #1b99b3, #126673, #f1f1f1);
+  background-size: 1000% 1000%;
+
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  -o-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-o-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
 }
