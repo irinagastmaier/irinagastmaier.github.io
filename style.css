@@ -162,7 +162,8 @@ body {
     left: 2.25rem;
   }
   /* SKILLS */
-  .title-section p {
+  .title-section p,
+  .projects-title p {
     font-size: 0.55em;
   }
   .skills-bar ul {
@@ -173,6 +174,19 @@ body {
   .skills-bar li {
     width: 97.5%;
   }
+
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* PROJECTS */
+
+figcaption {
+  font-size: 0.25rem;
+  padding: 0.5rem;
+}
 }
 
 /* Iphone */
@@ -200,13 +214,20 @@ body {
     bottom: 10.59em;
     font-size: 1.75rem;
   }
-  .title-section p, .projects-title p {
+  .title-section p,
+  .projects-title p {
     font-size: 0.55em;
   }
-  
+
   .skills-bar ul {
     margin-right: 2em;
   }
+
+  figcaption {
+    font-size: 0.25rem;
+    padding: 0.5rem;
+  }
+
 }
 
 /* AQUI TERMINA O MEDIA QUERIE */
@@ -381,7 +402,8 @@ footer {
 /* SKILLS */
 
 .skills-bar,
-.title-section, .grid {
+.title-section,
+.grid {
   border-left: 2px solid rgba(0, 0, 0, 0.7);
   border-right: 2px solid rgba(0, 0, 0, 0.7);
   width: 85%;
@@ -396,7 +418,7 @@ footer {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  padding-bottom: 3rem;
+  padding-bottom: 0.5rem;
 }
 
 .skills-bar ul {
@@ -414,8 +436,8 @@ footer {
 
 .skills {
   text-align: right;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   color: white;
 }
 
@@ -736,12 +758,18 @@ footer {
 
 /*  PROJECTS*/
 
+#projects {
+  padding-top: 2rem;
+}
+
 .grid {
   width: 85%;
-  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 2rem, repeat(2, 1fr);
+  gap: 1rem;
+  padding-bottom: 0.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr)); 
+  /* opion to avoid changing on the media querie */
+  grid-template-rows: 2rem, 1fr;
   grid-template-areas:
     "title title"
     "box1 box2"
@@ -769,30 +797,30 @@ footer {
   grid-area:box4;
 } */
 
-.square > * {
+.col > * {
   padding: 2rem;
   margin: 0 auto;
   text-align: center;
-  width: 80%;
-  position: relative;
+  width: 100%;
   /* border: 2px solid black; */
 }
 
-.square img {
-  width: 100%;
+.square > * {
+  position: relative;
 }
 
 .image {
   opacity: 1;
   display: block;
   width: 100%;
-  height: auto;
-  transition: .5s ease;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease;
   backface-visibility: hidden;
 }
 
 .middle {
-  transition: .5s ease;
+  transition: 0.5s ease;
   opacity: 0;
   position: absolute;
   top: 50%;
@@ -810,7 +838,7 @@ footer {
   opacity: 1;
 }
 
-figcaption {
+.square figcaption {
   background-color: rgb(18, 102, 115);
   color: rgb(241, 241, 241);
   font-size: 2em;
