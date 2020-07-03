@@ -182,12 +182,11 @@ body {
   }
 
   /* PROJECTS */
-
-figcaption {
-  font-size: 5px;
-  padding: 5px;
-  color: red;
-}
+  .middle {
+    font-size: 5px;
+  }
+  
+  
 }
 
 /* Iphone */
@@ -223,12 +222,9 @@ figcaption {
   .skills-bar ul {
     margin-right: 2em;
   }
-
-  figcaption {
-    font-size: 5px;
-    padding: 5px;
-    color: red;
-  }
+.middle {
+  font-size: 5px;
+}
 
 }
 
