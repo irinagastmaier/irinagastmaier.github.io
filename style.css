@@ -186,6 +186,7 @@ body {
 figcaption {
   font-size: 5px;
   padding: 5px;
+  color: red;
 }
 }
 
@@ -226,6 +227,7 @@ figcaption {
   figcaption {
     font-size: 5px;
     padding: 5px;
+    color: red;
   }
 
 }
