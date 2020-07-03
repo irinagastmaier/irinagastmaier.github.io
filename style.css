@@ -184,8 +184,8 @@ body {
   /* PROJECTS */
 
 figcaption {
-  font-size: 0.10rem;
-  padding: 0.15rem;
+  font-size: 5px;
+  padding: 5px;
 }
 }
 
@@ -224,8 +224,8 @@ figcaption {
   }
 
   figcaption {
-    font-size: 0.10rem;
-    padding: 0.15rem;
+    font-size: 5px;
+    padding: 5px;
   }
 
 }
