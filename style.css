@@ -182,11 +182,11 @@ body {
   }
 
   /* PROJECTS */
+
   .middle {
-    font-size: 5px;
-  }
-  
-  
+    font-size: 0.5rem;
+    padding: 0.25rem;
+}
 }
 
 /* Iphone */
@@ -222,9 +222,12 @@ body {
   .skills-bar ul {
     margin-right: 2em;
   }
-.middle {
-  font-size: 5px;
-}
+
+  .middle {
+    display: block;
+    font-size: 0.5rem;
+    padding: 0.25rem;
+  }
 
 }
 
