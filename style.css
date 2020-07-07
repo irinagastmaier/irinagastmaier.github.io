@@ -861,6 +861,12 @@ footer {
     padding: 0.10rem;
   }
 
+  button {
+    width: 100%;
+    padding: 0.2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.1rem;
+  }
 }
 
 
