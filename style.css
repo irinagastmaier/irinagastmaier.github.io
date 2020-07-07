@@ -785,6 +785,11 @@ footer {
 /* Android */
 @media only screen and (max-width: 40rem) {
 
+  #lado {
+    display: none;
+    visibility: hidden;
+  }
+
   /* HEADER */
   .logo {
     position: relative;
@@ -912,6 +917,12 @@ footer {
 
 /* Iphone */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+
+  #lado {
+    display: none;
+    visibility: hidden;
+  }
+  
   main {
     height: 55vh;
   }
