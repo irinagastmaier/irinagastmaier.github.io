@@ -623,6 +623,8 @@ footer {
     /* 'box3 box4' */;
 }
 
+/* PROJECTS GRID */
+
 @media only screen and (max-width: 60rem) {
   .grid {
     grid-template-areas:
@@ -704,7 +706,7 @@ footer {
   background-color: rgb(18, 102, 115);
   color: rgb(241, 241, 241);
   font-size: 2em;
-  padding: 2.5rem;
+  padding: 1rem;
 }
 
 
