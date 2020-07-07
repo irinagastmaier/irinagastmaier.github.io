@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- /*
-rgb (72, 131, 140) verde-azul claro icons
-rgb( 4, 121, 138) azul linha home
- rgb(27, 153, 179) azul chamativo, navbar
-rgb (18, 102, 115) verde-azul escuro triangulo
-rgb(194, 8, 97)rosa chamativo, navbar:hover, a:hover
-rgb(166, 76, 119) rosa
-rgb (0, 0, 0) preto
-rgb (241, 241, 241) quase branco : p
-*/ -->
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,21 +8,50 @@ rgb (241, 241, 241) quase branco : p
   <script src="https://kit.fontawesome.com/2f5a38ca2b.js" crossorigin="anonymous"></script>
   <title>Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+
+  <link rel="stylesheet"  media='screen and ( (max-width: 40rem)' href="navbar.css"/>
+  
 </head>
 
 <body>
-
-<header class="logo" alt="logo">
+<div class="bd">
+  <header class="logo" alt="logo">
 </header>
 
-<nav class="navbar">
-  <ul class="nav-content">
+
+<nav class="listnav">
+  <ul class="listnav-content">
     <li class="list-nav"><a href="#home">Home</a></li>
     <li class="list-nav"><a href="#skills">Skills</a></li>
     <li class="list-nav"><a href="#projects">Projects</a></li>
     <li class="list-nav"><a href="#contact">Contact</a></li>
 </ul>
 </nav>
+
+<!-- SMALL SCREEN ONLY -->
+
+<section id="lado">
+
+  <div class="ladobar">
+
+    <div class="lg">
+  <img src="logo.svg" alt="lg">
+</div>
+
+<div class="rw">
+<nav class="navrw">
+  <ul class="rw-content">
+    <li class="navbar-rw"><a href="#home">Home</a></li>
+    <li class="navbar-rw"><a href="#skills">Skills</a></li>
+    <li class="navbar-rw"><a href="#projects">Projects</a></li>
+    <li class="navbar-rw"><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</div>
+
+</div>
+
+</section>
 
 <section id="home">
   <main class="container">
@@ -114,7 +134,6 @@ rgb (241, 241, 241) quase branco : p
     <p>Projects</p>
   </div>
 
-  <!-- use <a> as a parent, so everthing is rendered as a link (clickable) -->
   <a class="square col-1" href="https://google.com" target="_blank">
     <figure>
       <span><img src="first.png" alt="GPS Company" class="image"></span>
@@ -187,6 +206,7 @@ rgb (241, 241, 241) quase branco : p
   </section>
 
 
+</div>
 
 </body>
 
