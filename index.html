@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- /* 
+<!-- /*
 rgb (72, 131, 140) verde-azul claro icons
 rgb( 4, 121, 138) azul linha home
  rgb(27, 153, 179) azul chamativo, navbar
@@ -13,7 +13,7 @@ rgb (241, 241, 241) quase branco : p
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/2f5a38ca2b.js" crossorigin="anonymous"></script>
   <title>Portfolio</title>
   <link rel="stylesheet" href="style.css" />
@@ -114,24 +114,24 @@ rgb (241, 241, 241) quase branco : p
     <p>Projects</p>
   </div>
 
-  <div class="square col-1">
-    <figure> 
-      <a href="https://google.com" target="_blank"><img src="first.png" alt="GPS Company" class="image"></a>
+  <!-- use <a> as a parent, so everthing is rendered as a link (clickable) -->
+  <a class="square col-1" href="https://google.com" target="_blank">
+    <figure>
+      <span><img src="first.png" alt="GPS Company" class="image"></span>
       <div class="middle">
-        <figcaption>GPS Company Website</figcaption> 
+        <figcaption>GPS Company Website</figcaption>
       </div>
     </figure>
-  </div>
+  </a>
 
-<div class="square col-2">
-  <figure>
-  <a href="https://google.com" target="_blank"><img src="second.png" alt="Handicraft" class="image"></a>
-  <div class="middle">
-  <figcaption>Handicraft E-commerce</figcaption>
-</div>
-</div>
-</figure>
-</div>
+  <a class="square col-2" href="https://google.com" target="_blank">
+    <figure>
+      <span><img src="second.png" alt="Handicraft" class="image"></span>
+      <div class="middle">
+        <figcaption>Handicraft E-commerce</figcaption>
+      </div>
+    </figure>
+  </a>
 <!-- <div class="square col-3">
 </div> -->
 <!-- <div class="square col-4">
@@ -159,7 +159,7 @@ rgb (241, 241, 241) quase branco : p
       <datalist id="company-sector">
       <option value="Primary"></option>
       <option value="Secondary"></option>
-      <option value="Tertiary"></option>   
+      <option value="Tertiary"></option>
       </datalist>
     </div>
     <div class="row-3 col-4">
