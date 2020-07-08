@@ -777,7 +777,7 @@ footer {
   background-color: rgb(18, 102, 115);
   color: rgb(241, 241, 241);
   font-size: 2em;
-  padding: 0.10rem;
+  padding: 0.5rem;
 }
 
 
@@ -796,41 +796,6 @@ footer {
   visibility: hidden;
 
 }
-
-  /* HEADER */
-  /* .logo {
-    position: relative;
-    width: 1.5rem;
-    left: 0.05rem;
-    margin: 0 auto;
-    height: 1rem;
-    top: 0.8rem;
-  }
-
-  .listnav-content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-    width: 50%;
-    height: 3.25rem;
-    font-size: 0.65rem;
-    padding-top: 0;
-  }
-
-  .listnav>a {
-    padding: 0;
-    width: 20%;
-    text-align: center;
-    margin-top: 0;
-  } */
-
-
-  /* HOME */
-/* 
-  main {
-    height: 48.75vh;
-  } */
 
   .item p {
     position: relative;
@@ -911,6 +876,12 @@ footer {
     padding: 0.10rem;
   }
 
+  .square figcaption {
+    font-size: 2em;
+    padding: 0.10rem;
+  }
+  
+
   /* CONTACT */
   button {
     width: 100%;
@@ -969,6 +940,12 @@ footer {
     font-size: 0.5rem;
     padding: 0.10rem;
   }
+
+  .square figcaption {
+    font-size: 2em;
+    padding: 0.12rem;
+  }
+  
 
   button {
     width: 100%;
