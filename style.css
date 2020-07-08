@@ -785,13 +785,20 @@ footer {
 /* Android */
 @media only screen and (max-width: 40rem) {
 
-  #lado {
+  .listnav {
     display: none;
     visibility: hidden;
   }
 
+
+.logo {
+  display: none;
+  visibility: hidden;
+
+}
+
   /* HEADER */
-  .logo {
+  /* .logo {
     position: relative;
     width: 1.5rem;
     left: 0.05rem;
@@ -812,12 +819,11 @@ footer {
   }
 
   .listnav>a {
-    /* fills all the width of the navbar with the links */
     padding: 0;
     width: 20%;
     text-align: center;
     margin-top: 0;
-  }
+  } */
 
 
   /* HOME */
@@ -918,11 +924,11 @@ footer {
 /* Iphone */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
 
-  #lado {
+  .listnav {
     display: none;
     visibility: hidden;
   }
-  
+
   main {
     height: 55vh;
   }
