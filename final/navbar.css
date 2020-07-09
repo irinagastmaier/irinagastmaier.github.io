@@ -1,0 +1,113 @@
+
+.listnav {
+    display: none;
+    visibility: hidden;
+
+}
+
+.logo {
+    display: none;
+    visibility: hidden;
+
+}
+
+.bd {
+    width: 99.5%;
+    height: auto;
+    display: grid;
+    /* padding-bottom: 0.5rem; */
+    grid-template-columns: 10em, 30em;
+    /* option to avoid changing on the media querie */
+    grid-template-rows: repeat(4, 100vh);
+    grid-template-areas:
+        "lado home"
+        "lado skills"
+        "lado projects"
+        "lado contact";
+}
+
+.ladobar {
+    padding-right: 3.0rem;
+    padding-left: 1.5rem;
+    padding-top: 2rem;
+    margin-top: 0.5rem auto;
+    border-right: 2px solid rgb(4, 121, 138);
+}
+
+li {
+    list-style: none;
+}
+
+.navrw {
+    margin: 0 auto;
+    padding-right: 0.5rem;
+    line-height: 2rem;
+    font-size: 0.95em;
+}
+
+.lg {
+    padding-bottom: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.lg img {
+    width: 2.5%;
+    position: fixed;
+}
+
+.rw {
+    position: fixed;
+    padding-top: 2rem;
+}
+
+.rw-content {
+    text-align: left;
+}
+
+
+
+#home {
+    grid-area: home;
+    padding-top: 9.5rem;
+    margin-left: 40px;
+    width: 100%;
+}
+
+.container {
+    height: 83vh;
+}
+
+#skills {
+    grid-area: skills;
+    margin-left: 40px;
+    width: 100%;
+}
+
+#projects {
+    grid-area: projects;
+    margin-left: 40px;
+    width: 100%;
+}
+
+#contact {
+    grid-area: contact;
+    margin-left: 40px;
+    width: 100%;
+}
+
+#lado {
+   
+    margin-top: 0.1rem;
+    position: fixed;
+}
+
+.final {
+    margin-left: 4.75rem;
+    font-size: 1.5rem;
+    }
+
+footer {
+    font-size: 0.65rem;
+    margin-left: 4.5rem;
+    padding-bottom: 2rem;
+}

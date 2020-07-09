@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/2f5a38ca2b.js" crossorigin="anonymous"></script>
+
+  <title>Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet"  media='screen and (min-device-width: 768px) ' href="navbar.css"/>
+  
+</head>
+
+<body>
+
+  <div class="bd">
+    <!-- div created to add the display grid to style the navbar on small screens -->
+
+<header class="logo" alt="logo">
+</header>
+<!-- the logo img is added in css -->
+
+
+<nav class="listnav">
+  <ul class="listnav-content">
+    <li class="list-nav"><a href="#home">Home</a></li>
+    <li class="list-nav"><a href="#skills">Skills</a></li>
+    <li class="list-nav"><a href="#projects">Projects</a></li>
+    <li class="list-nav"><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- SMALL SCREEN ONLY -->
+
+<section id="lado">
+
+  <div class="ladobar">
+
+    <div class="lg">
+  <img src="img/logo.svg" alt="lg">
+</div>
+
+<div class="rw">
+<nav class="navrw">
+  <ul class="rw-content">
+    <li class="navbar-rw"><a href="#home">Home</a></li>
+    <li class="navbar-rw"><a href="#skills">Skills</a></li>
+    <li class="navbar-rw"><a href="#projects">Projects</a></li>
+    <li class="navbar-rw"><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</div>
+
+</div>
+
+</section>
+
+<section id="home">
+  <main class="container">
+
+    <div class="item box-1">
+      <p class="item-1">Hi!</p>
+      <p class="item-2">I'm Irina Gastmaier</p>
+      <p class="item-3">Web Developer</p>
+      <p class="item-4">Based in Berlin</p>
+    </div>
+    <div class="main-content">
+      <div class="main icons">
+
+        <a href="https://github.com/irinagastmaier" title="/irinagastmaier" alt="GitHub" target="_blank"><i
+            class="fab fa-github"></i></a>
+
+        <a href="https://www.linkedin.com/in/irinagastmaier" title="in/irinagastmaier" alt="linkedin"
+          target="_blank"><i class="fab fa-linkedin-in"></i></a>
+
+      </div>
+    </div>
+    <div class="sidebar">
+      <div class="sidebar side-1"></div>
+    </div>
+  </main>
+</section>
+
+
+<section id="skills">
+
+  <div class="title-section">
+  <p>Skills</p>
+</div>
+
+  <div class="skills-bar">
+    <ul>
+      <li>
+        <h4>HTML</h4>
+        <div class="bar">
+          <div class="skills html">90%</div>
+        </div>
+      </li>
+      <li>
+        <h4>CSS</h4>
+        <div class="bar">
+          <div class="skills css">90%</div>
+        </div>
+      </li>
+      <li>
+        <h4>JavaScript</h4>
+        <div class="bar">
+          <div class="skills js">65%</div>
+        </div>
+      </li>
+
+      <li>
+        <h4>Node.js</h4>
+        <div class="bar">
+          <div class="skills nodejs">55%</div>
+        </div>
+      </li>
+
+      <li>
+        <h4>Bootstrap</h4>
+        <div class="bar">
+          <div class="skills bs">95%</div>
+        </div>
+      </li>
+
+
+      <li>
+        <h4>Sass</h4>
+        <div class="bar">
+          <div class="skills ss">70%</div>
+        </div>
+      </li>
+    </ul>
+
+  </div>
+
+</section>
+
+
+<section id="projects">
+<div class="grid">
+
+  <div class="projects-title">
+    <p>Projects</p>
+  </div>
+
+  <a class="square col-1" href="https://google.com" target="_blank">
+    <figure>
+      <span><img src="img/second.png" alt="GPS Company" class="image"></span>
+      <div class="middle">
+        <figcaption>GPS Company Website</figcaption>
+      </div>
+    </figure>
+  </a>
+
+  <a class="square col-2" href="https://google.com" target="_blank">
+    <figure>
+      <span><img src="img/thrid.png" alt="Handicraft" class="image"></span>
+      <div class="middle">
+        <figcaption>Handicraft E-commerce</figcaption>
+      </div>
+    </figure>
+  </a>
+
+</section>
+
+<section id="contact">
+<div class="row">
+  <fieldset>
+  <legend class="row row-1">Get in touch</legend>
+  <div class="row row-2">
+    <p> I am happy to talk with you, whether you have a project, just ideas or don't even know where to start.</p>
+  </div>
+  <div class="row row-3">
+    <form action="https://formspree.io/mqkydpov" method="post">
+    <div class="row-3 col-1">
+      <input type="text" name="name" id="name" placeholder="First and Last Name" required/>
+    </div>
+    <div class="row-3 col-2">
+      <input type="text" name="company-name" id="company-name" placeholder="Company Name" required/>
+    </div>
+    <div class="row-3 col-3">
+      <input list="company-sector" id="sector" name="sector" placeholder="Industry Sector" />
+      <datalist id="company-sector">
+      <option value="Primary"></option>
+      <option value="Secondary"></option>
+      <option value="Tertiary"></option>
+      </datalist>
+    </div>
+    <div class="row-3 col-4">
+      <input type="email" name="email" id="email" placeholder="Email" required/>
+    </div>
+    <div class="row-3 col-5">
+      <label for="message" class="label">Your Message:</label>
+      <textarea name="message" id="message" rows="7" cols="50" placeholder="Enter your message here."></textarea>
+    </div>
+    <div class="row-3 col-6">
+      <button type="submit"><i class="fas fa-paper-plane"></i></button>
+    </div>
+  </fieldset>
+  </form>
+  </div>
+</div>
+
+  <div class="final">
+    <a href="https://www.linkedin.com/in/irinagastmaier" title="in/irinagastmaier" alt="linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://github.com/irinagastmaier" title="/irinagastmaier" alt="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+  </div>
+
+    <footer class="footer">&copy;2020 Irina Gastmaier</footer>
+
+  </section>
+
+
+</div>
+
+</body>
+
+</html>
