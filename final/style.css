@@ -125,7 +125,7 @@ a:hover {
   margin: 1.875em auto;
   padding: 1.25em;
   display: grid;
-  grid-template-rows: 31.25em 6.25em;
+  grid-template-rows: 33.25em 6.25em;
   grid-template-columns: 1fr 9.5em;
   grid-template-areas:
     "box-1 side"
@@ -144,6 +144,7 @@ a:hover {
   text-align: center;
   font-size: 3em;
   line-height: 2em;
+  padding-top: 3.25rem;
 }
 
 .main-content {
@@ -153,8 +154,8 @@ a:hover {
 
 .icons {
   text-align: right;
-  margin-right: 5em;
-  padding-top: 0.625em;
+  margin-right: 4.42em;
+  padding-top: 1.25em;
   letter-spacing: 0.3125em;
 }
 
@@ -171,7 +172,7 @@ a:hover {
   margin: -150px;
   background: rgb(18, 102, 115);
   width: 500px;
-  height: 950px;
+  height: 1090.58px;
   clip-path: polygon(100% 0, 0% 88%, 100% 59%);
   transform: scale(0.75);
 }
@@ -185,7 +186,7 @@ a:hover {
 }
 
 .row-3 {
-  width: 50%;
+  width: 80%;
   display: inline-block;
   padding: 0.5rem;
 }
@@ -196,14 +197,22 @@ a:hover {
 
 /* PAGE TITTLE */
 
-.row-1,
+.row-1 {
+  font-weight: 500;
+  font-size: 3.75em;
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
 .title-section,
 .projects-title {
   font-weight: 500;
   font-size: 3.75em;
   padding-bottom: 1rem;
   padding-top: 0.5rem;
-  color: #f1f1f1;
+  color: rgba(0, 0, 0, 0.78);
   text-align: center;
 }
 
@@ -234,6 +243,7 @@ textarea {
   padding: 0.5rem;
   font-size: 1em;
   font-family: "Raleway", sans-serif;
+  
 }
 
 button {
@@ -265,19 +275,23 @@ footer {
 
 /* SKILLS */
 
+
 .skills-bar,
 .title-section,
 .grid {
-  border-left: 2px solid rgba(0, 0, 0, 0.7);
-  border-right: 2px solid rgba(0, 0, 0, 0.7);
-  width: 85%;
+  border-left: 2px solid  rgba(18, 102, 115, 0.5);
+  border-right: 2px solid  rgba(18, 102, 115, 0.5);
+  /* border-top: 2px solid rgba(18, 102, 115, 0.5); */
+  width: 89%;
   margin: 0 auto;
+  background-color: rgba(204, 214, 216, 0.9);
 }
 
 .skills-bar h4 {
   font-weight: 400;
   line-height: 1.5rem;
   padding-top: 2rem;
+  color: rgb(0, 0, 0);
 }
 
 .skills-bar {
@@ -741,6 +755,10 @@ footer {
   }
 }
 
+.blank {
+  padding: 2rem;
+}
+
 /*  PROJECTS*/
 
 #projects {
@@ -748,7 +766,7 @@ footer {
 }
 
 .grid {
-  width: 85%;
+  width: 89%;
   display: grid;
   gap: 2rem;
   padding-bottom: 0.5rem;
