@@ -830,8 +830,13 @@ footer {
   }
 
   .bar div{
-    padding: 0.42rem;
+    padding: 0.49rem;
   }
+
+
+.blank {
+  padding: 0.2rem;
+}
 
 
   /* PROJECTS */
