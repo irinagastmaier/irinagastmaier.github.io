@@ -926,6 +926,10 @@ button, .row-3 {
     display: none;
     visibility: hidden;
   }
+
+  footer {
+    padding: 5.5rem;
+  }
   
 
 }
