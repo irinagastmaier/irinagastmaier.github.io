@@ -57,13 +57,13 @@ section {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  width: 88%;
+  width: 86%;
   z-index: 9;
   background-color: rgba(0, 0, 0, 0.89);
   border-top: 2px solid rgb(27, 153, 179) ;
   position: fixed;
-  top: 42em;
-  right: 1.35rem;
+  top: 40em;
+  right: 1.55rem;
   padding: 1vh;
 }
 
@@ -74,7 +74,7 @@ section {
   margin: 0 auto;
   padding: 0.75em 1.25em;
   font-weight: 400;
-  font-size: 0.79rem;
+  font-size: 0.78rem;
 }
 
 .listnav > a:active {
@@ -122,7 +122,7 @@ a:hover {
   */
   overflow: hidden;
 
-  width: 88%;
+  width: 86%;
   margin: 1.875em auto;
   padding: 1.25em;
   display: grid;
@@ -181,7 +181,7 @@ a:hover {
 /* CONTACT */
 
 .row {
-  width: 87%;
+  width: 85%;
   text-align: center;
   margin: 0 auto;
 }
@@ -281,7 +281,7 @@ footer {
   border-left: 2px solid  rgba(18, 102, 115, 0.5);
   border-right: 2px solid  rgba(18, 102, 115, 0.5);
   /* border-top: 2px solid rgba(18, 102, 115, 0.5); */
-  width: 87%;
+  width: 86%;
   margin: 0 auto;
   background-color: rgba(204, 214, 216, 0.9);
 }
@@ -660,7 +660,7 @@ footer {
 }
 
 .grid {
-  width: 87%;
+  width: 86%;
   display: grid;
   padding-bottom: 1rem;
   gap: 1rem;
