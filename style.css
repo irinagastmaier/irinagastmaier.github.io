@@ -62,7 +62,7 @@ section {
   background-color: rgba(0, 0, 0, 0.89);
   border-top: 2px solid rgb(27, 153, 179) ;
   position: fixed;
-  top: 37em;
+  top: 35.5em;
   right: 1.55rem;
   padding: 1vh;
 }
@@ -966,6 +966,7 @@ button, .row-3 {
 .sc {
   font-size: 5.3rem;
 }
+
  
  }
  
