@@ -3,7 +3,7 @@ rgb (72, 131, 140) verde-azul claro icons
 rgb (4, 121, 138) azul linha home
  rgb(27, 153, 179) azul chamativo, navbar
 rgb(18, 102, 115) verde-azul escuro triangulo
-rgb(194, 8, 97)rosa chamativo, navbar:hover, a:hover
+rgb(115, 18, 102) violet, navbar:hover, a:hover
 rgb(0, 0, 0) preto
 color: rgb(204, 214, 216) quase branco : 
 color: rgb(255, 255, 255); get in touch + skills text
@@ -79,14 +79,14 @@ section {
   font-size: 0.78rem;
 }
 
-.listnav>a:active {
+.listnav > a:active {
   /* onmousedown event */
   color: rgb(27, 153, 179);
 }
 
-.listnav>a:hover {
+.listnav > a:hover {
   /* onmouseover and ontouchdown event */
-  color: rgb(194, 8, 97);
+  color: rgb(115, 18, 102);
 }
 
 .listnav-content {
@@ -105,7 +105,7 @@ a {
 }
 
 a:hover {
-  color: rgb(194, 8, 97);
+  color: rgb(115, 18, 102);
 }
 
 #home {
@@ -256,7 +256,7 @@ button {
 }
 
 button:hover {
-  color: rgb(194, 8, 97);
+  color: rgb(115, 18, 102);
 }
 
 footer {
@@ -321,7 +321,7 @@ footer {
   padding: 1.15em 1.25em;
   padding-top: 2rem;
   font-size: 1.28rem;
-  color: rgba(115, 18, 54, 0.9);
+  color: rgba(115, 18, 102);
   cursor: pointer;
 }
 
@@ -859,13 +859,13 @@ footer {
     ;
   }
 
-  .col>* {
+  .col > * {
     padding: 2rem;
     margin: auto;
     text-align: center;
   }
 
-  .square>* {
+  .square > * {
     position: relative;
   }
 
