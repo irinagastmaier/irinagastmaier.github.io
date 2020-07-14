@@ -28,7 +28,7 @@
 
 .ladobar {
     padding-right: 3.0rem;
-    padding-left: 1.5rem;
+    padding-left: 0.82rem;
     padding-top: 2rem;
     margin-top: 0.5rem auto;
     border-right: 2px solid rgb(4, 121, 138);
@@ -46,18 +46,21 @@ li {
 }
 
 .lg {
-    padding-bottom: 0.595rem;
-    margin-right: 0.5rem;
+    padding-top: 1.13rem;
+    padding-bottom: 0.575rem;
+    padding-left: 0.45rem;
 }
 
 .lg img {
-    width: 2.5%;
+    width: 2.15%;
     position: fixed;
+    left: 0.83rem;
+    top: 2.55rem;
 }
 
 .rw {
     position: fixed;
-    padding-top: 2rem;
+    padding-top: 0.92rem;
 }
 
 .rw-content {
@@ -96,18 +99,6 @@ li {
 }
 
 #lado {
-   
     margin-top: 0.1rem;
     position: fixed;
-}
-
-.final {
-    margin-left: 4.75rem;
-    font-size: 1.5rem;
-    }
-
-footer {
-    font-size: 0.65rem;
-    margin-left: 4.5rem;
-    padding-bottom: 2rem;
 }

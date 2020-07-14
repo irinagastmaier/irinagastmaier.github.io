@@ -28,30 +28,25 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
-#home,
-#contact {
-  height: auto;
+section {
+  min-height: 100vh;
+  overflow: auto;
 }
+
 
 /* HEADER */
-.navbar {
-  display: none;
-  visibility: hidden;
-}
-
-
 
 .logo {
-  position: absolute;
+  position: relative;
   background: url('img/logo.svg') center;
   background-repeat: no-repeat;
   background-size: contain;
-  width: 2.75em;
-  height: 3.75em;
+  width: 1.75em;
+  height: 0.95em;
   display: block;
   /*https://css-tricks.com/almanac/properties/d/display/ */
   margin: 1em;
-  left: 3.70em;
+  left: 8.70em;
   top: 0.1em;
   z-index: 10;
   /* set header above navbar */
@@ -59,21 +54,34 @@ body {
 
 .listnav {
   display: flex;
-  flex-flow: row;
-  justify-content: flex-end;
-  width: 97%;
+  flex-flow: row nowrap;
+  justify-content: center;
+  width: 88%;
   z-index: 9;
-  /* set header above the others elements */
-  position: sticky;
-  /* so the header is always visible, similar to "fixed", but only snaps on the when scroll position reaches the element */
+  background-color: rgba(0, 0, 0, 0.89);
+  border-top: 2px solid rgb(27, 153, 179) ;
+  position: fixed;
+  top: 42em;
+  right: 1.35rem;
+  padding: 1vh;
 }
 
-.listnav>a:active {
+.list-nav {
+  text-decoration: none;
+  list-style: none;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0.75em 1.25em;
+  font-weight: 400;
+  font-size: 0.79rem;
+}
+
+.listnav > a:active {
   /* onmousedown event */
   color: rgb(27, 153, 179);
 }
 
-.listnav>a:hover {
+.listnav > a:hover {
   /* onmouseover and ontouchdown event */
   color: rgb(194, 8, 97);
 }
@@ -83,15 +91,7 @@ body {
   /*https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
 }
 
-.list-nav {
-  text-decoration: none;
-  list-style: none;
-  display: inline-block;
-  margin: 0 0.5em;
-  line-height: 1em;
-  height: 3.5em;
-  padding: 2.75em 2em;
-}
+
 
 
 /* HOME */
@@ -121,7 +121,7 @@ a:hover {
   */
   overflow: hidden;
 
-  width: 90%;
+  width: 88%;
   margin: 1.875em auto;
   padding: 1.25em;
   display: grid;
@@ -133,7 +133,7 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.9);
 }
 
-.container>* {
+.container > * {
   padding: 1.25rem;
   /* used rem, so it takes the base size from the parent (1em) and not from the element (2.5em) */
   color: #f1f1f1;
@@ -155,7 +155,7 @@ a:hover {
 .icons {
   text-align: right;
   margin-right: 4.42em;
-  padding-top: 1.25em;
+  padding-top: 1.65em;
   letter-spacing: 0.3125em;
 }
 
@@ -172,7 +172,7 @@ a:hover {
   margin: -150px;
   background: rgb(18, 102, 115);
   width: 500px;
-  height: 1090.58px;
+  height: 1097.58px;
   clip-path: polygon(100% 0, 0% 88%, 100% 59%);
   transform: scale(0.75);
 }
@@ -180,7 +180,7 @@ a:hover {
 /* CONTACT */
 
 .row {
-  width: 85%;
+  width: 87%;
   text-align: center;
   margin: 0 auto;
 }
@@ -188,11 +188,7 @@ a:hover {
 .row-3 {
   width: 80%;
   display: inline-block;
-  padding: 0.5rem;
-}
-
-.row-1 {
-  padding-top: 2rem !important; 
+  padding: 0.75em;
 }
 
 /* PAGE TITTLE */
@@ -200,8 +196,8 @@ a:hover {
 .row-1 {
   font-weight: 500;
   font-size: 3.75em;
-  padding-bottom: 1rem;
-  padding-top: 0.5rem;
+  padding-bottom: 3rem;
+  padding-top: 2rem;
   color: rgb(255, 255, 255);
   text-align: center;
 }
@@ -219,8 +215,8 @@ a:hover {
 /* END PAGE TITTLE */
 
 .row-2 {
-  padding-bottom: 1rem;
-  font-size: 1.75em;
+  padding-bottom: 1.65rem;
+  font-size: 1.45rem;
 }
 
 fieldset {
@@ -243,14 +239,12 @@ textarea {
   padding: 0.5rem;
   font-size: 1em;
   font-family: "Raleway", sans-serif;
-  
 }
 
 button {
   width: 100%;
-  padding: 0.5rem;
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
+  padding: 0.1rem;
+  margin-top: 0.7rem;
   font-size: 2.5em;
   background-color: transparent;
   color: rgb(72, 131, 140);
@@ -264,13 +258,17 @@ button:hover {
 
 footer {
   text-align: center;
-  padding-top: 2em;
+  padding-top: 1.53rem;
+  padding-bottom: 1.5rem;
+  font-size: 0.75rem;
+
 }
 
 .final {
   text-align: center;
-  padding-top: 1em;
-  font-size: 2em;
+  font-size: 1.75em;
+  padding-top: 2rem;
+
 }
 
 /* SKILLS */
@@ -278,13 +276,18 @@ footer {
 
 .skills-bar,
 .title-section,
-.grid {
+.grid, .language-skills{
   border-left: 2px solid  rgba(18, 102, 115, 0.5);
   border-right: 2px solid  rgba(18, 102, 115, 0.5);
   /* border-top: 2px solid rgba(18, 102, 115, 0.5); */
-  width: 89%;
+  width: 87%;
   margin: 0 auto;
   background-color: rgba(204, 214, 216, 0.9);
+}
+
+.title-section {
+  padding-bottom: 2.5rem;
+  padding-top: 1.5rem;
 }
 
 .skills-bar h4 {
@@ -294,13 +297,47 @@ footer {
   color: rgb(0, 0, 0);
 }
 
+#skills h3 {
+  font-weight: 400;
+  color: rgb( 4, 121, 138);
+  text-align: center;
+}
+
+.language {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.sc {
+  text-decoration: none;
+  list-style: none;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 1.15em 1.25em;
+  padding-top: 2rem;
+  font-size: 1.35rem;
+  color: rgb(6, 51, 59) ;
+  cursor: pointer;
+}
+
+
+.sc > i:active {
+  color: rgb(0, 0, 0);
+}
+
+.sc > i:hover {
+  color: rgb(194, 8, 97);
+}
+
+
 .skills-bar {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.15rem;
 }
 
 .skills-bar ul {
@@ -323,224 +360,8 @@ footer {
   color: white;
 }
 
-.html {
+.git {
   width: 90%;
-  background: linear-gradient(270deg,
-      #48838c,
-      #04798a,
-      #1b99b3,
-      #126673,
-      #f1f1f1);
-  background-size: 1000% 1000%;
-
-  -webkit-animation: AnimationName 20s ease infinite;
-  -moz-animation: AnimationName 20s ease infinite;
-  -o-animation: AnimationName 20s ease infinite;
-  animation: AnimationName 20s ease infinite;
-}
-
-@-webkit-keyframes AnimationName {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@-moz-keyframes AnimationName {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@-o-keyframes AnimationName {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes AnimationName {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-.css {
-  width: 90%;
-  background: linear-gradient(270deg,
-      #48838c,
-      #04798a,
-      #1b99b3,
-      #126673,
-      #f1f1f1);
-  background-size: 1000% 1000%;
-
-  -webkit-animation: AnimationName 20s ease infinite;
-  -moz-animation: AnimationName 20s ease infinite;
-  -o-animation: AnimationName 20s ease infinite;
-  animation: AnimationName 20s ease infinite;
-}
-
-@-webkit-keyframes AnimationName {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@-moz-keyframes AnimationName {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@-o-keyframes AnimationName {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes AnimationName {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-.js {
-  width: 65%;
-  background: linear-gradient(270deg,
-      #48838c,
-      #04798a,
-      #1b99b3,
-      #126673,
-      #f1f1f1);
-  background-size: 1000% 1000%;
-
-  -webkit-animation: AnimationName 20s ease infinite;
-  -moz-animation: AnimationName 20s ease infinite;
-  -o-animation: AnimationName 20s ease infinite;
-  animation: AnimationName 20s ease infinite;
-}
-
-@-webkit-keyframes AnimationName {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@-moz-keyframes AnimationName {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@-o-keyframes AnimationName {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes AnimationName {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-.nodejs {
-  width: 55%;
   background: linear-gradient(270deg,
       #48838c,
       #04798a,
@@ -612,7 +433,7 @@ footer {
 }
 
 .bs {
-  width: 95%;
+  width: 90%;
   background: linear-gradient(270deg,
       #48838c,
       #04798a,
@@ -683,7 +504,79 @@ footer {
   }
 }
 
-.ss {
+.react {
+  width: 15%;
+  background: linear-gradient(270deg,
+      #48838c,
+      #04798a,
+      #1b99b3,
+      #126673,
+      #f1f1f1);
+  background-size: 1000% 1000%;
+
+  -webkit-animation: AnimationName 20s ease infinite;
+  -moz-animation: AnimationName 20s ease infinite;
+  -o-animation: AnimationName 20s ease infinite;
+  animation: AnimationName 20s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-o-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.figma {
   width: 70%;
   background: linear-gradient(270deg,
       #48838c,
@@ -761,65 +654,25 @@ footer {
 
 /*  PROJECTS*/
 
-#projects {
+#projects, #skills {
   padding-top: 2rem;
 }
 
 .grid {
-  width: 89%;
+  width: 87%;
   display: grid;
-  gap: 2rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
+  gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr));
   /* option to avoid changing on the media querie */
   grid-template-rows: 2rem, 1fr;
   grid-template-areas:
     "title title"
     "box1 box2"
-    /* 'box3 box4' */
+    'box3 box4'
   ;
 }
 
-@media only screen and (min-width: 1280px) {
- 
- .grid {
-   display: grid;
-   gap: 2rem;
- }
-
-
- 
- 
-  figure {
-    width: 95%;
-    height: 95%;
-    margin: 0 auto;
-    padding-top: 0.5rem;
-  }
-}
-
-@media only screen and (max-width: 60rem) {
-  .grid {
-    grid-template-areas:
-      "title"
-      "box1"
-      "box2";
-  }
-
-  .middle {
-    opacity: 1 !important;
-    /* https://css-tricks.com/when-using-important-is-the-right-choice/ */
-    transform: translate(0%, 0%) !important;
-    text-align: center;
-  }
-
-  .square {
-    width: 90%;
-    justify-self: center;
-
-  }
-
-}
 
 .projects-title {
   grid-area: title;
@@ -833,14 +686,13 @@ footer {
   grid-area: box2;
 }
 
-/*
 .col-3 {
   grid-area:box3;
 }
 
 .col-4 {
   grid-area:box4;
-} */
+} 
 
 .col > * {
   padding: 2rem;
@@ -889,71 +741,67 @@ footer {
 }
 
 
-/* Android */
+/* Android and some Iphones */
 @media only screen and (max-width: 40rem) {
 
-  .listnav {
+section {
+  min-height: 99vh;
+  overflow: auto;
+}
+
+
+  #lado {
     display: none;
     visibility: hidden;
   }
 
-
-.logo {
-  display: none;
-  visibility: hidden;
-
-}
-
-  .item p {
+  .item p{
     position: relative;
     font-size: 0.4em;
     line-height: 3em;
-    right: 0.5rem;
-    text-align: left;
-    top: -1em;
+    top: 1em;
+    bottom: 2rem;
   }
+
+  .item-2, .item-3, .item-4 {
+    left: 2.15rem;
+    text-align: left;
+  }
+
+  #home .item-1 {
+    position: relative;
+    text-align: right;
+    right: 136.5px;
+  }
+  
 
   .icons i {
     display: block;
     position: relative;
     text-align: left;
-    margin-right: -3.5em;
+    margin-right: -0.5em;
     left: 3.15rem;
     letter-spacing: 2em;
-    bottom: 8.4em;
+    line-height: 2.5rem;
+    bottom: 5.4em;
     font-size: 2rem;
+  }
+
+  .main a {
+    position: relative;
+    right: 3.5rem;
+    top: 0.10rem;
   }
 
   div .side-1 {
     position: absolute;
-    right: 5px;
-    bottom: 205px;
+    right: 102px;
+    top: 1px;
+    bottom: 2px;
+    width: 500px;
+    height: 869.58px;
   }
 
-  .row legend {
-    font-size: 2rem;
-  }
-
-  .row p {
-    font-size: 0.65rem;
-  }
-
-  .row-3 {
-    position: relative;
-    right: 2.25rem;
-  }
-
-  .row-3 input,
-  .row-3 textarea,
-  .row-3 label {
-    width: 200px;
-    font-size: 0.75rem;
-  }
-
-  .col-6 {
-    position: relative;
-    left: 2.25rem;
-  }
 
   /* SKILLS */
   .title-section p,
@@ -971,14 +819,34 @@ footer {
   }
 
   .image {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     object-fit: cover;
   }
 
   /* PROJECTS */
 
-
+  .grid {
+    display: grid;
+    grid-template-areas:
+      'title'
+      'box1'
+      'box2'
+      'box3'
+      'box4'
+    ;
+  }
+  
+  .col > * {
+    padding: 2rem;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .square > * {
+    position: relative;
+  }
+  
   .middle {
     font-size: 0.5rem;
     padding: 0.10rem;
@@ -989,77 +857,104 @@ footer {
     padding: 0.10rem;
   }
   
-
-  /* CONTACT */
-  button {
-    width: 100%;
-    padding: 0;
-    margin-top: 0.1rem;
-    margin-bottom: 0.1rem;
-    font-size: 1.95rem;
-  }
+  .image {
+  opacity: 1;
+  display: block;
+  width: 72.5%;
+  height: 100%;
+  margin: 0 auto;
 }
 
-/* Iphone */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+/* CONTACT */
 
-  .listnav {
-    display: none;
-    visibility: hidden;
+button, .row-3 {
+  width: 100%;
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+  font-size: 1.95rem;
+  padding: 0.25rem;
+}
+  .row legend {
+    font-size: 2rem;
+    padding: 0.5rem;
   }
 
-  main {
-    height: 55vh;
+  .row {
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    width: 87%;
+    margin: 0 auto;
+    padding: 0.2rem;
   }
 
-  .item p {
+  .row-3 input,
+  .row-3 textarea,
+  .row-3 label {
+    width: 200px;
+    font-size: 0.75rem;
+  }
+
+  .row-3 label {
     position: relative;
-    font-size: 0.4em;
-    line-height: 3em;
-    right: 0.5rem;
-    text-align: left;
-    top: -1em;
+    left: 1.59rem;
   }
 
-  .icons i {
-    display: block;
-    position: relative;
-    text-align: left;
-    margin-right: -3.5em;
-    left: 4.45rem;
-    letter-spacing: 2em;
-    bottom: 10.59em;
-    font-size: 1.75rem;
-  }
-
-  .title-section p,
-  .projects-title p {
-    font-size: 0.55em;
-  }
-
-  .skills-bar ul {
-    margin-right: 2em;
-  }
-
-  /* PROJECTS */
-
-  .middle {
-    display: block;
-    font-size: 0.5rem;
-    padding: 0.10rem;
-  }
-
-  .square figcaption {
-    font-size: 2em;
-    padding: 0.12rem;
+  .row-2  p{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 0.83rem;
+    line-height: 1.10rem;
   }
   
 
-  button {
-    width: 100%;
-    padding: 0;
-    margin-top: 0.1rem;
-    margin-bottom: 0.1rem;
-    font-size: 1.95rem;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .lg img {
+    width: 2rem !important;
   }
 }
+
+
+/* DESKTOP + BIGGER SCREENS */
+
+@media only screen and (min-width: 1280px) {
+ 
+  .grid {
+    display: grid;
+    gap: 2.0rem;
+  }
+  
+   figure {
+     width: 86.7%;
+     height: 100%;
+     margin: 0 auto;
+     padding-top: 0.5rem;
+    }
+ 
+   .middle {
+     opacity: 1 !important;
+     /* https://css-tricks.com/when-using-important-is-the-right-choice/ */
+     transform: translate(0%, 0%) !important;
+     text-align: center;
+   }
+ 
+   .square {
+     width: 90%;
+     justify-self: center;
+ 
+   }
+
+   .final {
+     padding: 1.35rem;
+     padding-bottom: 0;
+   }
+
+
+.sc {
+  font-size: 5.3rem;
+}
+ 
+ }
+ 

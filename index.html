@@ -10,21 +10,21 @@
   <title>Portfolio</title>
 
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet"  media='screen and (max-width: 40rem)' href="navbar.css"/>
+  <link rel="stylesheet"  media='screen and (min-device-width: 768px) ' href="navbar.css"/>
   
 </head>
 
 <body>
 
   <div class="bd">
-    <!-- div created to add the display grid to style the navbar on small screens -->
+    <!-- div created to add the display grid to style the navbar on larger screens -->
 
-<header class="logo" alt="logo">
-</header>
-<!-- the logo img is added in css -->
-
+    <header class="logo" alt="logo">
+    </header>
 
 <nav class="listnav">
+  
+<!-- the logo img is added in css -->
   <ul class="listnav-content">
     <li class="list-nav"><a href="#home">Home</a></li>
     <li class="list-nav"><a href="#skills">Skills</a></li>
@@ -33,14 +33,14 @@
 </ul>
 </nav>
 
-<!-- SMALL SCREEN ONLY -->
+<!-- LARGER SCREENS ONLY -->
 
 <section id="lado">
 
   <div class="ladobar">
 
     <div class="lg">
-  <img src="logo.svg" alt="lg">
+  <img src="img/logo.svg" alt="lg">
 </div>
 
 <div class="rw">
@@ -91,41 +91,54 @@
   <p>Skills</p>
 </div>
 
+<div class="language-skills">
+  <h3>Languages I speak:</h3>
+    <nav class=language>
+    <ul>
+      <li class="sc"><i class="fab fa-html5" title="HTML"></i></li>
+      <li class="sc"><i class="fab fa-css3-alt" title="CSS"></i></li>
+      <li class="sc"><i class="fab fa-sass" title="Sass"></i></li>
+      <li class="sc"><i class="fab fa-js" title="JavaScript"></i></li>
+    </ul>
+  </nav>
+</div>
+
   <div class="skills-bar">
+    <h3>Tools:</h3>
     <ul>
       <li>
-        <h4>HTML</h4>
+        <h4>Github</h4>
         <div class="bar">
-          <div class="skills html">95%</div>
+          <div class="skills git">90%</div>
         </div>
       </li>
       <li>
-        <h4>CSS</h4>
+        <h4>Bootstrap</h4>
         <div class="bar">
-          <div class="skills css">95%</div>
+          <div class="skills bs">90%</div>
         </div>
       </li>
       <li>
-        <h4>JavaScript</h4>
+      <li>
+        <h4>React</h4>
         <div class="bar">
-          <div class="skills js">65%</div>
+          <div class="skills react">15%</div>
         </div>
       </li>
-
       <li>
-        <h4>Node.js</h4>
+        <h4>Figma</h4>
         <div class="bar">
-          <div class="skills nodejs">55%</div>
-        </div>
-      </li>
-
-      <li>
-        <h4>NPM</h4>
-        <div class="bar">
-          <div class="skills npm">45%</div>
+          <div class="skills figma">70%</div>
         </div>
       </li>
     </ul>
+
+
+  
+      <div class="blank">
+
+      </div>
+   
 
   </div>
 
@@ -139,6 +152,21 @@
     <p>Projects</p>
   </div>
 
+  <div class="square col-1">
+    <a class="square col-1" href="https://google.com" target="_blank">
+      <figure>
+        <span><img src="img/second.png" alt="GPS Company" class="image"></span>
+        <div class="middle">
+          <figcaption>GPS Company Website</figcaption>
+        </div>
+      </figure>
+    </a>
+
+  </div>
+  <div class="square col-2"></div>
+  <div class="square col-3"></div>
+  <div class="square col-4"></div>
+
   <a class="square col-1" href="https://google.com" target="_blank">
     <figure>
       <span><img src="img/second.png" alt="GPS Company" class="image"></span>
@@ -148,7 +176,7 @@
     </figure>
   </a>
 
-  <a class="square col-2" href="https://google.com" target="_blank">
+  <a class="square col-4" href="https://google.com" target="_blank">
     <figure>
       <span><img src="img/thrid.png" alt="Handicraft" class="image"></span>
       <div class="middle">
@@ -156,11 +184,25 @@
       </div>
     </figure>
   </a>
-<!-- <div class="square col-3">
-</div> -->
-<!-- <div class="square col-4">
-</div> -->
-</div>
+
+  <a class="square col-3" href="https://google.com" target="_blank">
+    <figure>
+      <span><img src="img/5.png" alt="Brigaderia" class="image"></span>
+      <div class="middle">
+        <figcaption>Candy Store Website</figcaption>
+      </div>
+    </figure>
+  </a>
+
+  <a class="square col-2" href="https://google.com" target="_blank">
+    <figure>
+      <span><img src="img/4.png" alt="Handicraft" class="image"></span>
+      <div class="middle">
+        <figcaption>Plant and Seeds E-commerce</figcaption>
+      </div>
+    </figure>
+  </a>
+
 </section>
 
 <section id="contact">
@@ -199,7 +241,6 @@
   </fieldset>
   </form>
   </div>
-</div>
 
   <div class="final">
     <a href="https://www.linkedin.com/in/irinagastmaier" title="in/irinagastmaier" alt="linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
@@ -207,6 +248,7 @@
   </div>
 
     <footer class="footer">&copy;2020 Irina Gastmaier</footer>
+</div>
 
   </section>
 
