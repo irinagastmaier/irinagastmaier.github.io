@@ -62,7 +62,7 @@ section {
   background-color: rgba(0, 0, 0, 0.89);
   border-top: 2px solid rgb(27, 153, 179) ;
   position: fixed;
-  top: 35em;
+  top: 36.5em;
   right: 1.55rem;
   padding: 1vh;
 }
@@ -75,6 +75,7 @@ section {
   padding: 0.75em 1.25em;
   font-weight: 400;
   font-size: 0.78rem;
+  padding-bottom: 3vh;
 }
 
 .listnav > a:active {
@@ -744,12 +745,6 @@ footer {
 
 /* Android and some Iphones */
 @media only screen and (max-width: 40rem) {
-
-section {
-  min-height: 99vh;
-  overflow: auto;
-}
-
 
   #lado {
     display: none;
