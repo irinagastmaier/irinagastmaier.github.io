@@ -9,9 +9,9 @@ color: rgb(204, 214, 216) quase branco :
 color: rgb(255, 255, 255); get in touch + skills text
  rgba(204, 214, 216, 0.9) bg-color: skills + projects
   rgb(6, 51, 59) icons
-*/ 
+*/
 
-  /* use em,  just divide the value in px by 16! */
+/* use em,  just divide the value in px by 16! */
 
 * {
   margin: 0;
@@ -60,7 +60,7 @@ section {
   width: 86%;
   z-index: 9;
   background-color: rgba(0, 0, 0, 0.89);
-  border-top: 2px solid rgb(27, 153, 179) ;
+  border-top: 2px solid rgb(27, 153, 179);
   position: fixed;
   top: 36.5em;
   right: 1.56rem;
@@ -77,12 +77,12 @@ section {
   font-size: 0.78rem;
 }
 
-.listnav > a:active {
+.listnav>a:active {
   /* onmousedown event */
   color: rgb(27, 153, 179);
 }
 
-.listnav > a:hover {
+.listnav>a:hover {
   /* onmouseover and ontouchdown event */
   color: rgb(194, 8, 97);
 }
@@ -134,7 +134,7 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.9);
 }
 
-.container > * {
+.container>* {
   padding: 1.25rem;
   /* used rem, so it takes the base size from the parent (1em) and not from the element (2.5em) */
   color: #f1f1f1;
@@ -277,9 +277,10 @@ footer {
 
 .skills-bar,
 .title-section,
-.grid, .language-skills{
-  border-left: 2px solid  rgba(18, 102, 115, 0.5);
-  border-right: 2px solid  rgba(18, 102, 115, 0.5);
+.grid,
+.language-skills {
+  border-left: 2px solid rgba(18, 102, 115, 0.5);
+  border-right: 2px solid rgba(18, 102, 115, 0.5);
   /* border-top: 2px solid rgba(18, 102, 115, 0.5); */
   width: 86%;
   margin: 0 auto;
@@ -300,7 +301,7 @@ footer {
 
 #skills h3 {
   font-weight: 400;
-  color: rgb( 4, 121, 138);
+  color: rgb(4, 121, 138);
   text-align: center;
 }
 
@@ -318,16 +319,16 @@ footer {
   padding: 1.15em 1.25em;
   padding-top: 2rem;
   font-size: 1.28rem;
-  color: rgb(6, 51, 59) ;
+  color: rgb(6, 51, 59);
   cursor: pointer;
 }
 
 
-.sc > i:active {
+.sc>i:active {
   color: rgb(0, 0, 0);
 }
 
-.sc > i:hover {
+.sc>i:hover {
   color: rgb(194, 8, 97);
 }
 
@@ -655,7 +656,8 @@ footer {
 
 /*  PROJECTS*/
 
-#projects, #skills {
+#projects,
+#skills {
   padding-top: 2rem;
 }
 
@@ -688,20 +690,20 @@ footer {
 }
 
 .col-3 {
-  grid-area:box3;
+  grid-area: box3;
 }
 
 .col-4 {
-  grid-area:box4;
-} 
+  grid-area: box4;
+}
 
-.col > * {
+.col>* {
   padding: 2rem;
   margin: auto;
   text-align: center;
 }
 
-.square > * {
+.square>* {
   position: relative;
 }
 
@@ -742,7 +744,7 @@ footer {
 }
 
 
-/* Android and some Iphones */
+/* Android and smaller screens */
 @media only screen and (max-width: 40rem) {
 
   #lado {
@@ -750,14 +752,16 @@ footer {
     visibility: hidden;
   }
 
-  .item p{
+  .item p {
     position: relative;
     font-size: 0.4em;
     line-height: 3em;
     top: 2rem;
   }
 
-  .item-2, .item-3, .item-4 {
+  .item-2,
+  .item-3,
+  .item-4 {
     left: 2.15rem;
     text-align: left;
   }
@@ -767,7 +771,7 @@ footer {
     text-align: right;
     right: 136.5px;
   }
-  
+
 
   .icons i {
     display: block;
@@ -787,19 +791,20 @@ footer {
     top: 0.10rem;
   }
 
-.main-content {
-  border-top: none;
-}
+  .main-content {
+    border-top: none;
+  }
 
-.item {
-  position: relative;
-  bottom: 55px;
-  border-bottom: 3px solid rgb(4, 121, 138);
+  .item {
+    position: relative;
+    bottom: 55px;
+    border-bottom: 3px solid rgb(4, 121, 138);
 
-}
-.container {
-  height: 80vh;
-}
+  }
+
+  .container {
+    height: 80vh;
+  }
 
   div .side-1 {
     position: relative;
@@ -829,14 +834,14 @@ footer {
     padding-bottom: 0;
   }
 
-  .bar div{
+  .bar div {
     padding: 0.49rem;
   }
 
 
-.blank {
-  padding: 0.2rem;
-}
+  .blank {
+    padding: 0.2rem;
+  }
 
 
   /* PROJECTS */
@@ -851,17 +856,17 @@ footer {
       'box4'
     ;
   }
-  
-  .col > * {
+
+  .col>* {
     padding: 2rem;
     margin: auto;
     text-align: center;
   }
-  
-  .square > * {
+
+  .square>* {
     position: relative;
   }
-  
+
   .middle {
     font-size: 0.5rem;
     padding: 0.10rem;
@@ -871,24 +876,26 @@ footer {
     font-size: 2em;
     padding: 0.10rem;
   }
-  
+
   .image {
-  opacity: 1;
-  display: block;
-  width: 61%;
-  height: 100%;
-  margin: 0 auto;
-}
+    opacity: 1;
+    display: block;
+    width: 61%;
+    height: 100%;
+    margin: 0 auto;
+  }
 
-/* CONTACT */
+  /* CONTACT */
 
-button, .row-3 {
-  width: 100%;
-  margin-top: 0.1rem;
-  margin-bottom: 0.1rem;
-  font-size: 1.95rem;
-  padding: 0.25rem;
-}
+  button,
+  .row-3 {
+    width: 100%;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    font-size: 1.95rem;
+    padding: 0.25rem;
+  }
+
   .row legend {
     font-size: 2rem;
     padding: 0.5rem;
@@ -915,7 +922,7 @@ button, .row-3 {
     left: 1.59rem;
   }
 
-  .row-2  p{
+  .row-2 p {
     width: 100%;
     padding: 0.5rem;
     font-size: 0.83rem;
@@ -930,10 +937,36 @@ button, .row-3 {
   footer {
     padding: 5.5rem;
   }
-  
+}
+
+/* Iphone */
+@media only screen and (min-device-width: 375px) and (max-device-width: 736px) {
+
+  /* NAVBAR */
+  .listnav {
+    position: fixed;
+    top: 36.5em;
+    left: 1.65rem;
+    right: 1.50rem;
+    padding: 1vh;
+  }
+
+  /* HOME */
+
+  .container {
+    height: 87vh;
+  }
+
+  /* PROJECS */
+
+  .image {
+    width: 58%;
+    height: 100%;
+  }
 
 }
 
+/* Ipad and Kindle */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .lg img {
     width: 2rem !important;
@@ -944,42 +977,39 @@ button, .row-3 {
 /* DESKTOP + BIGGER SCREENS */
 
 @media only screen and (min-width: 1280px) {
- 
+
   .grid {
     display: grid;
     gap: 2.0rem;
   }
-  
-   figure {
-     width: 86.7%;
-     height: 100%;
-     margin: 0 auto;
-     padding-top: 0.5rem;
-    }
- 
-   .middle {
-     opacity: 1 !important;
-     /* https://css-tricks.com/when-using-important-is-the-right-choice/ */
-     transform: translate(0%, 0%) !important;
-     text-align: center;
-   }
- 
-   .square {
-     width: 90%;
-     justify-self: center;
- 
-   }
 
-   .final {
-     padding: 1.35rem;
-     padding-bottom: 0;
-   }
+  figure {
+    width: 86.7%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 0.5rem;
+  }
+
+  .middle {
+    opacity: 1 !important;
+    /* https://css-tricks.com/when-using-important-is-the-right-choice/ */
+    transform: translate(0%, 0%) !important;
+    text-align: center;
+  }
+
+  .square {
+    width: 90%;
+    justify-self: center;
+
+  }
+
+  .final {
+    padding: 1.35rem;
+    padding-bottom: 0;
+  }
 
 
-.sc {
-  font-size: 5.3rem;
+  .sc {
+    font-size: 5.3rem;
+  }
 }
-
- 
- }
- 
