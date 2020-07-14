@@ -8,7 +8,9 @@ rgb(0, 0, 0) preto
 color: rgb(204, 214, 216) quase branco : 
 color: rgb(255, 255, 255); get in touch + skills text
  rgba(204, 214, 216, 0.9) bg-color: skills + projects
-  rgb(6, 51, 59) icons
+ rgb(86, 118, 123) skills and project title
+   rgba(115, 18, 54, 0.9) icons skills
+  rgb(18, 54, 115) icons hover
 */
 
 /* use em,  just divide the value in px by 16! */
@@ -209,7 +211,7 @@ a:hover {
   font-size: 3.75em;
   padding-bottom: 1rem;
   padding-top: 0.5rem;
-  color: rgba(0, 0, 0, 0.78);
+  color: rgb(86, 118, 123);
   text-align: center;
 }
 
@@ -319,7 +321,7 @@ footer {
   padding: 1.15em 1.25em;
   padding-top: 2rem;
   font-size: 1.28rem;
-  color: rgb(6, 51, 59);
+  color: rgba(115, 18, 54, 0.9);
   cursor: pointer;
 }
 
@@ -329,7 +331,7 @@ footer {
 }
 
 .sc>i:hover {
-  color: rgb(194, 8, 97);
+  color: rgb(18, 54, 115);
 }
 
 
