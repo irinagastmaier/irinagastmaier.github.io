@@ -62,7 +62,7 @@ section {
   background-color: rgba(0, 0, 0, 0.89);
   border-top: 2px solid rgb(27, 153, 179) ;
   position: fixed;
-  top: 40em;
+  top: 37em;
   right: 1.55rem;
   padding: 1vh;
 }
@@ -317,7 +317,7 @@ footer {
   margin: 0 auto;
   padding: 1.15em 1.25em;
   padding-top: 2rem;
-  font-size: 1.35rem;
+  font-size: 1.28rem;
   color: rgb(6, 51, 59) ;
   cursor: pointer;
 }
@@ -760,8 +760,7 @@ section {
     position: relative;
     font-size: 0.4em;
     line-height: 3em;
-    top: 1em;
-    bottom: 2rem;
+    top: 2rem;
   }
 
   .item-2, .item-3, .item-4 {
@@ -781,10 +780,10 @@ section {
     position: relative;
     text-align: left;
     margin-right: -0.5em;
-    left: 3.15rem;
+    left: 4.95rem;
     letter-spacing: 2em;
     line-height: 2.5rem;
-    bottom: 5.4em;
+    bottom: 6.9em;
     font-size: 2rem;
   }
 
@@ -794,13 +793,24 @@ section {
     top: 0.10rem;
   }
 
+.main-content {
+  border-top: none;
+}
+
+.item {
+  position: relative;
+  bottom: 55px;
+  border-bottom: 3px solid rgb(4, 121, 138);
+
+}
+
   div .side-1 {
-    position: absolute;
+    position: relative;
     right: 102px;
-    top: 1px;
+    top: -150px;
     bottom: 2px;
-    width: 500px;
-    height: 869.58px;
+    width: 400px;
+    height: 959.58px;
   }
 
 
