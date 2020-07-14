@@ -3,9 +3,8 @@ rgb (72, 131, 140) verde-azul claro icons
 rgb (4, 121, 138) azul linha home
  rgb(27, 153, 179) azul chamativo, navbar
 rgb(18, 102, 115) verde-azul escuro triangulo
-rgb(115, 18, 102) violet, navbar:hover, a:hover
-rgb(0, 0, 0) preto
-color: rgb(204, 214, 216) quase branco : 
+rgba(0, 0, 0, 0.9) black #home and navbar 
+rgb(232, 240, 241) contact title and white parts
 color: rgb(255, 255, 255); get in touch + skills text
  rgba(204, 214, 216, 0.9) bg-color: skills + projects
  rgb(86, 118, 123) skills and project title
@@ -84,10 +83,6 @@ section {
   color: rgb(27, 153, 179);
 }
 
-.listnav > a:hover {
-  /* onmouseover and ontouchdown event */
-  color: rgb(115, 18, 102);
-}
 
 .listnav-content {
   transition: color 0.25s ease;
@@ -102,7 +97,7 @@ a {
 }
 
 a:hover {
-  color: rgb(115, 18, 102);
+color: rgb(254,255,221);
 }
 
 #home {
@@ -197,7 +192,7 @@ a:hover {
   font-size: 3.75em;
   padding-bottom: 3rem;
   padding-top: 2rem;
-  color: rgb(255, 255, 255);
+  color: rgb(232, 240, 241);
   text-align: center;
 }
 
@@ -233,6 +228,7 @@ input,
 textarea {
   width: 100%;
   color: rgb(0, 0, 0);
+  background-color: rgb(232, 240, 241);
   border: 1px solid rgb(72, 131, 140);
   border-radius: 0.5%;
   padding: 0.5rem;
@@ -252,7 +248,7 @@ button {
 }
 
 button:hover {
-  color: rgb(115, 18, 102);
+  color: rgb(254,255,221);
 }
 
 footer {
@@ -314,7 +310,7 @@ footer {
   padding: 1.15em 1.25em;
   padding-top: 2rem;
   font-size: 1.28rem;
-  color: rgba(115, 18, 102);
+  color: rgb(0,144,0);
   cursor: pointer;
 }
 
@@ -323,7 +319,7 @@ footer {
 }
 
 .sc > i:hover {
-  color: rgb(18, 54, 115);
+  color: rgb(254,255,221);
 }
 
 .skills-bar {
@@ -344,7 +340,7 @@ footer {
 
 .bar {
   width: 94%;
-  background-color: white;
+  background-color:rgb(232, 240, 241);
   text-align: right;
 }
 
@@ -352,7 +348,7 @@ footer {
   text-align: right;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  color: white;
+  color: rgb(232, 240, 241);
 }
 
 .git {
