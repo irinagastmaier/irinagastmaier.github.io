@@ -310,16 +310,12 @@ footer {
   padding: 1.15em 1.25em;
   padding-top: 2rem;
   font-size: 1.28rem;
-  color: rgb(0,144,0);
+  color:  rgb(254,255,221);
   cursor: pointer;
 }
 
-.sc > i:active {
-  color: rgb(0, 0, 0);
-}
-
 .sc > i:hover {
-  color: rgb(254,255,221);
+  color:  rgb(4, 121, 138);
 }
 
 .skills-bar {
