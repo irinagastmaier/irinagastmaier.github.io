@@ -1,4 +1,12 @@
 
+
+/* section Projects is under construction, for make nicer while I work on that, I create the later class, to not display the in progress content */
+.later {
+    display: none;
+    visibility: hidden;
+  }
+
+
 .listnav {
     display: none;
     visibility: hidden;

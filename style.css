@@ -1,6 +1,6 @@
 /*
 rgb (72, 131, 140) verde-azul claro icons
-rgb (4, 121, 138) azul linha home
+rgb (4, 121, 138) azul linha home e icons hover
  rgb(27, 153, 179) azul chamativo, navbar
 rgb(18, 102, 115) verde-azul escuro triangulo
 rgba(0, 0, 0, 0.9) black #home and navbar 
@@ -10,9 +10,49 @@ color: rgb(255, 255, 255); get in touch + skills text
  rgb(86, 118, 123) skills and project title
    rgba(115, 18, 54, 0.9) icons skills
   rgb(18, 54, 115) icons hover
+  rgb (254, 255, 221) amarelo
 */
 
 /* use em,  just divide the value in px by 16! */
+
+/* section Projects is under construction, for make nicer while I work on that, I create the later class, to not display the in progress content */
+
+.later {
+  display: none;
+  visibility: hidden;
+}
+
+.now1 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.now  {
+  color: rgb(232, 240, 241);
+  padding-top: 30vh;
+  padding-bottom: 35vh;
+  background: linear-gradient(270deg, #feffdd, #04798a, #feffdd);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimationName 40s ease infinite;
+  -moz-animation: AnimationName 40s ease infinite;
+  animation: AnimationName 40s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
 
 * {
   margin: 0;
@@ -736,6 +776,11 @@ footer {
 
 /* Android and smaller screens */
 @media only screen and (max-width: 40rem) {
+
+  .now  {
+    padding-top: 20vh;
+    padding-bottom: 20vh;}
+
   #lado {
     display: none;
     visibility: hidden;
